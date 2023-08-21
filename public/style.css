@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Styling for the heading */
+  .Heading {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  /* Styling for the form */
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+
+/* Styling for the task list */
+ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li.task {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    max-width: 400px; /* Adjust the value as needed */
+    margin: 0 auto; /* Center the list items */
+  }
+  
+  .task-checkbox:checked + span {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+ 
+  

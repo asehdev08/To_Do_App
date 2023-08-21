@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capstone Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="Heading">Capstone Project</h1>
+    <form action="/" method="post">
+        <input type="text" name="task" placeholder="enter a task">
+        <button type="submit">Add Task</button>
+    </form>
+    
+    <ul>
+        <% tasks.forEach(function(task, index) { %>
+            <li class="task">
+                <input type="checkbox" class="task-checkbox" name="completed" value="<%= index %>">
+                <span><%= task %></span>
+            </li>
+        <% }); %> 
+    </ul>   
+</body>
+</html>
